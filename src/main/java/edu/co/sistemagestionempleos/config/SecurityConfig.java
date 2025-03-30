@@ -50,7 +50,7 @@ public class SecurityConfig {
                 // Deshabilitamos la protección CSRF (recomendada cuando usamos JWT en APIs)
                 .cors(cors -> cors.configurationSource(request -> {
                     CorsConfiguration config = new CorsConfiguration();
-                    config.setAllowedOrigins(Arrays.asList("http://127.0.0.1:5500"));
+                    config.setAllowedOrigins(Arrays.asList("https://gestionempleos.netlify.app"));
                     config.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE"));
                     config.setAllowedHeaders(Arrays.asList("Authorization", "Content-Type"));
                     config.setAllowCredentials(true);
